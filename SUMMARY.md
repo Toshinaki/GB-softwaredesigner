@@ -6,5 +6,5 @@
 
 * [Preface](note-sdtest/preface.md)
 * [Table of Content](note-sdtest/table-of-content.md)
-* [1. 计算机组成与体系结构](note-sdtest/untitled.md)
+* [1. 计算机组成与体系结构](note-sdtest/1_computer_structure.md)
 

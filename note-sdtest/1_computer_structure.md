@@ -93,6 +93,8 @@ description: '数据的表示, 计算机结构, Flynn分类法, CISC与RISC, 流
 
 计算机 = 主机 + 外设
 
+![](../.gitbook/assets/image%20%281%29.png)
+
 ## 1.3 Flynn分类法
 
 <table>
@@ -229,6 +231,12 @@ description: '数据的表示, 计算机结构, Flynn分类法, CISC与RISC, 流
 >
 > 各种部件可同时执行多条指令的不同部分, 以提高各部件的利用率和指令的平均执行速度
 
+![](../.gitbook/assets/image%20%286%29.png)
+
+![&#x5404;&#x4E2A;&#x90E8;&#x4EF6;&#x90FD;&#x6709;&#x5927;&#x91CF;&#x7684;&#x7A7A;&#x95F2;&#x72B6;&#x6001;](../.gitbook/assets/image%20%2810%29.png)
+
+![&#x5404;&#x4E2A;&#x90E8;&#x4EF6;&#x5145;&#x5206;&#x8FD0;&#x884C;](../.gitbook/assets/image%20%287%29.png)
+
 ### 1.5.2 执行时长的计算
 
 周期: 执行时间最长的一段
@@ -237,6 +245,8 @@ description: '数据的表示, 计算机结构, Flynn分类法, CISC与RISC, 流
 
 * 理论公式:  $$(t_1 + t_2 + ... + t_k) + (n-1) \times \Delta t$$ 
 * 实践公式: $$(k + n - 1) \times \Delta t$$ \(将指令执行的每一部分都看作一个周期长\)
+
+![](../.gitbook/assets/image%20%2812%29.png)
 
 > 例: 若指令流水线把一条指令分为取指 \(2ns\), 分析 \(2ns\), 执行 \(1ns\)三部分.
 >
@@ -270,9 +280,13 @@ $$E = \frac{n\text{个任务占用的时空区}}{k\text{个流水段的总时空
 >
 > $$E = \frac{(\Delta t + \Delta t + \Delta t + 3\Delta t) \times 4}{15\Delta t \times 4}$$
 
+![](../.gitbook/assets/image%20%289%29.png)
+
 由上例可见, 每个流水段用时相同的情况下, 流水线效率最高
 
 ## 1.6 层次化存储结构
+
+![](../.gitbook/assets/image%20%2811%29.png)
 
 存储器分类:
 
@@ -374,6 +388,8 @@ printf(s) // 调用一次
 > 例1: 某存储器只有一个芯片 \(8\*4bit\), 该芯片的容量为32bit; 计算机每次处理4bit数据; 内存按4bit编址:
 >
 > 则该芯片有 $$\text{容量} \div \text{一个地址代表的容量} = 32 \div 4 = 8$$ 个地址; 数据总线的长度为4; 地址总线的个数分为 $$\log_2{8} = 3$$
+
+![](../.gitbook/assets/image%20%284%29.png)
 
 > 例2: 内存按字节编址, 地址从A4000H到CBFFFH, 则共有 $$\text{CBFFFH} + 1 - \text{A4000H} = \text{28000H} = 160K$$ 字节; 若用存储容量32K $$\times$$ 8 bit 的芯片构成该内存, 则至少需要 $$160 \div 32 = 5$$ 片
 
